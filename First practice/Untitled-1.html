@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://db.onlinewebfonts.com/c/5b46e8941800676b0c12cfcec9359097?family=Diverda+Sans+Com+Medium"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/5b46e8941800676b0c12cfcec9359097?family=Diverda+Sans+Com+Medium);
+
+        @font-face {
+            font-family: "Diverda Sans Com Medium";
+            src: url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.eot");
+            src: url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.eot?#iefix")format("embedded-opentype"),
+                url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.woff2")format("woff2"),
+                url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.woff")format("woff"),
+                url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.ttf")format("truetype"),
+                url("https://db.onlinewebfonts.com/t/5b46e8941800676b0c12cfcec9359097.svg#Diverda Sans Com Medium")format("svg");
+        }
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        :root {
+            --color-fitst: #1b2c2bab;
+            --color-second: #db4e47;
+            --font-size: 12px;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Diverda Sans Com Medium";
+        }
+
+        .fa-caret-down {
+            font-size: 13px;
+            color: var(--color-fitst);
+        }
+
+        .home {
+            color: var(--color-second);
+            font-size: var(--font-size);
+            margin: 0;
+        }
+
+        .div-flex-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1106px;
+            height: 91px;
+        }
+
+        .div-flex-nav-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div2-padding-home {
+            padding: 26px 23px;
+            font-weight: bold;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .div2-padding {
+            display: flex;
+            padding: 0 23px;
+            color: var(--color-fitst);
+            font-size: var(--font-size);
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .site-name-style {
+            color: var(--color-fitst);
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .foto-center-text1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .foto-text1 {
+            color: #fff;
+            width: 448px;
+            text-decoration: underline;
+            font-size: 43px;
+        }
+
+        .foto-center-text2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .foto-text2 {
+            width: 266px;
+            color: #fff;
+        }
+
+        .foto {
+            background-repeat: no-repeat;
+            background-image: url(https://photographylife.com/wp-content/uploads/2020/03/Ultra-Wide-Angle-Panoramas-1.jpg);
+            background-position: center;
+            height: 426px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            border-radius: 28px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-second);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            margin-top: 25px;
+        }
+
+        .text-1 {
+            font-weight: bold;
+            font-size: 35px;
+            color: var(--color-fitst);
+        }
+
+        .text-2 {
+            font-size: 20px;
+            color: #1b2c2b6b;
+        }
+
+        .container-flex {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            color: var(--color-fitst);
+            background-color: #dfdfdf40;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 44px 26px;
+            width: 190px;
+        }
+
+
+        .title-bold {
+            font-weight: bold;
+        }
+
+        .info {
+            font-size: 14px;
+            color: #1b2c2b6b;
+            text-align: center;
+        }
+
+        .one {
+            width: 200px;
+        }
+
+        .two {
+            width: 193px;
+        }
+
+        .three {
+            width: 214px;
+        }
+
+        .four {
+            width: 205px;
+        }
+
+        .icon {
+            color: #db4e47;
+            font-size: 50px;
+        }
+
+        .border {
+            border-right: 1px solid #d9d9d9;
+        }
+
+        .more {
+            border-radius: 7px;
+            background-color: var(--color-fitst);
+            color: #fff;
+            padding: 5px 17px;
+            text-decoration: none;
+        }
+
+        .container-line {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line {
+            width: 456px;
+            border-color: #1b2c2b3d;
+            margin: 0 20px;
+        }
+
+        .arrow-circle {
+            border-radius: 19px;
+            width: 19px;
+            height: 19px;
+            background-color: var(--color-second);
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .ArrowCircle {
+            position: absolute;
+            left: 4px;
+            top: 2px;
+        }
+
+        .space-right {
+            margin: 0 10px 0 6px;
+        }
+
+        .space-left {
+            margin: 0 6px 0 0;
+        }
+
+        .four-part {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 44px;
+            justify-content: center;
+        }
+
+        .granat {
+            border-radius: 14px;
+            width: 200px;
+            height: 155px;
+            margin-right: 38px;
+        }
+
+        .line-two {
+            width: 994px;
+            border-color: #1b2c2b3d;
+        }
+
+        .ViewPortfolio {
+            border-radius: 5px;
+            background-color: var(--color-second);
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 14px;
+        }
+
+        .ViewPortfolio-center {
+            justify-content: center;
+            display: flex;
+        }
+
+        .margin-r0 {
+            margin-right: 0;
+        }
+
+        .Portret {
+            width: 100px;
+            border-radius: 7px;
+            margin-right: 27px;
+            height: 100px;
+        }
+
+        .plas-more {
+            color: var(--color-second);
+        }
+
+        .titel {
+            color: var(--color-fitst);
+            margin-bottom: 11px;
+            margin-top: 0;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .inf {
+            color: #1b2c2b5e;
+        }
+
+        .Portret-container {
+            height: 106px;
+        }
+
+        .CVV-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 997px;
+            margin: 0 auto;
+        }
+
+        .CVV {
+            width: 482px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 27px;
+            margin-right: 33px;
+        }
+
+        .conection {
+            background-color: var(--color-fitst);
+            height: 340px;
+        }
+
+        .conection2 {
+            height: 127px;
+        }
+
+        .conection3 {
+            height: 90px;
+            background-color: var(--color-fitst);
+
+        }
+
+        .TextConection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 39px;
+        }
+
+        .ConectionText1 {
+            color: #fff;
+        }
+
+        .ConectionText2 {
+            color: #fff;
+
+        }
+
+        .mail {
+            font-size: 40px;
+            margin-right: 20px;
+        }
+
+        .TitelEmail {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .InfEmail {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .twitter {
+            color: #fff;
+            font-size: 50px;
+            padding: 0 20px 0 20px;
+        }
+
+        .CVV-margin-right0 {
+            margin-right: 0;
+        }
+
+        .FlexConection {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .input {
+            width: 411px;
+            border: none;
+            background-color: #1b2c2b3d;
+            height: 35px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14.5px;
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: #1b2c2b3d;
+            height: 35px;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+            font-size: 15.5px;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        .LessMargin {
+            margin: 40px auto;
+        }
+
+        .MarginConection {
+            margin-right: 30px;
+        }
+
+        .PaddingConection {
+            background-color: #1b2c2b3d;
+            border-radius: 5px;
+            height: 107px;
+            width: 443px;
+            display: flex;
+            align-items: center;
+        }
+
+        .johndoe {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .TwitterTextStyle {
+            width: 338px;
+            font-size: 14px;
+            color: #ffffff70;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="div-flex-nav">
+            <div class="site-name-style">Site name</div>
+
+            <div class="div-flex-nav-2">
+                <div class="div2-padding-home">
+                    <i class="fa fa-caret-down"></i>
+                    <p class="home">HOME</p>
+                </div>
+                <div class="div2-padding">ABOUT</div>
+                <div class="div2-padding">SERVISES</div>
+                <div class="div2-padding">PROGECT</div>
+                <div class="div2-padding">BLOG</div>
+                <div class="div2-padding">CONTACT</div>
+            </div>
+        </div>
+    </nav>
+    <div class="foto">
+        <div class="foto-center-text1">
+            <div class="foto-text1">Lorem ipsum laro dolore sit amet vivamus</div>
+        </div>
+        <div class="foto-center-text2">
+            <p class="foto-text2">LOREM IPSUM LARO SIT AMET DOLORE SIT AME</p>
+        </div>
+        <a class="circle" href="">
+            <svg fill="#fff" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_24_"
+                    d="M216.358,271.76c-2.322-5.605-7.792-9.26-13.858-9.26H180V15c0-8.284-6.716-15-15-15
+	c-8.284,0-15,6.716-15,15v247.5h-22.5c-6.067,0-11.537,3.655-13.858,9.26c-2.321,5.605-1.038,12.057,3.252,16.347l37.5,37.5
+	C157.322,328.536,161.161,330,165,330s7.678-1.464,10.607-4.394l37.5-37.5C217.396,283.816,218.68,277.365,216.358,271.76z" />
+            </svg>
+        </a>
+    </div>
+    <br>
+    <div class="text-container">
+        <div class="text-1">Lorem ipsun dolor sit amet</div>
+        <div class="text-2">Donec odio volutpat mattos eros ullam malesuada erat ut turpis.</div>
+    </div>
+    <br>
+    <div class="container-flex">
+        <div class="flex-center border">
+            <i class="fa fa-solid fa-desktop icon"></i>
+            <br>
+            <div class="title-bold">Nunc dignissim</div>
+            <br>
+            <div class="info one">Praesent dapibus, neque id curs us faucibus, tortor neque egestas
+                augue, eu nulputate magn</div>
+            <br>
+            <a class="more" href="">
+                More
+            </a>
+        </div>
+
+        <div class="flex-center border">
+            <i class="fa fa-solid fa-flask icon"></i>
+            <br>
+            <div class="title-bold">Aliquam tinci</div>
+            <br>
+            <div class="info two">Dones consevtetuer ligula v tate sem tristique cursus. Nam nulla quam, gravida info
+            </div>
+            <br>
+            <a class="more" href="">
+                More
+            </a>
+        </div>
+
+        <div class="flex-center border">
+            <i class="fa fa-cogs icon"></i>
+            <br>
+            <div class="title-bold">Vestibu auctor </div>
+            <br>
+            <div class="info three">Jorbi rbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pel-lentesque
+                egestas sem.</div>
+            <br>
+            <a class="more" href="">
+                More
+            </a>
+        </div>
+
+        <div class="flex-center">
+            <i class="fa fa-solid fa-bullhorn icon"></i>
+            <br>
+            <div class="title-bold">Civamus vesti</div>
+            <br>
+            <div class="info four">Morbi est est, dlandit sit amet, sagittis vel, euismod vel, velit. Pel-lentesque
+                egestas
+                sem.</div>
+            <br>
+            <a class="more" href="">
+                More
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="text-container">
+        <div class="text-1">Lorem ipsun dolor sit amet</div>
+        <div class="text-2">Donec odio volutpat mattos eros ullam malesuada erat ut turpis.</div>
+    </div>
+    <br>
+    <div class="container-line">
+        <hr class="line ">
+        <div class="arrow-circle space-right ">
+            <i class="fa fa-regular fa-arrow-left ArrowCircle"></i>
+        </div>
+        <div class="arrow-circle space-left">
+            <i class="fa fa-solid fa-arrow-right ArrowCircle"></i>
+        </div>
+        <hr class="line">
+    </div>
+    <br>
+    <br>
+    <div class="four-part">
+        <img class="granat" src="./granat1.jpg" alt="granat1">
+        <img class="granat" src="./granat2.jpg" alt="granat2">
+        <img class="granat" src="./granat3.jpg" alt="granat3">
+        <img class="granat margin-r0" src="./granat4.jpg" alt="granat4">
+    </div>
+    <div class="ViewPortfolio-center">
+        <a class="ViewPortfolio" href="">View Portfolio</a>
+    </div>
+    <br>
+    <br>
+    <hr class="line-two">
+
+    <div class="CVV-container">
+        <div class="CVV">
+            <img class="Portret" src="./sofiia.jpg" alt="I">
+            <div>
+                <h3 class="titel">Integer vitae libero</h3>
+                <p class="inf">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+                    magna
+                    eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ippsuk dolor <span
+                        class="plas-more">+
+                        more</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="CVV CVV-margin-right0">
+            <img class="Portret" src="./eugen.jpg" alt="eugen">
+            <div>
+                <h3 class="titel">Integer vitae libero</h3>
+                <p class="inf">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+                    magna
+                    eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ippsuk dolor <span
+                        class="plas-more">+
+                        more</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="CVV">
+            <img class="Portret" src="./polina.jpg" alt="pola">
+            <div>
+                <h3 class="titel">Integer vitae libero</h3>
+                <p class="inf">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+                    magna
+                    eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ippsuk dolor <span
+                        class="plas-more">+
+                        more</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="CVV CVV-margin-right0">
+            <img class="Portret" src="./viktoria.jpg" alt="vika">
+            <div>
+                <h3 class="titel">Integer vitae libero</h3>
+                <p class="inf">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+                    magna
+                    eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ippsuk dolor <span
+                        class="plas-more">+
+                        more</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conection">
+        <div class="TextConection">
+            <div class="text-1 ConectionText1">Lorem ipsun dolor sit amet</div>
+            <div class="text-2 ConectionText2">Donec odio volutpat mattos eros ullam malesuada erat ut turpis.</div>
+        </div>
+        <hr class="line-two">
+        <div class="CVV-container LessMargin">
+            <div class="MarginConection">
+                <div class="FlexConection">
+                    <i class="fa fa-solid fa-envelope mail" style="color: #ffffff;"></i>
+                    <div>
+                        <h3 class="TitelEmail">Subscribr Our Newsletter</h3>
+                        <p class="InfEmail">via email on how to grow ypur business online</p>
+                    </div>
+                </div>
+                <input class="input" type="text">
+                <button class="button">Sign up</button>
+            </div>
+
+            <div class="PaddingConection">
+                <i class="fa fa-brands fa-twitter twitter"></i>
+                <p class="TwitterTextStyle">Donec nec justo eget felis fermentum. Aliquam porttitor mauris sit amet
+                    orci. Aenean dignissim pellentesque felis euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                    consequar <a class="johndoe" href=""><span>@johndoe</span></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="conection2">
+
+    </div>
+
+    <div class="conection3">
+
+    </div>
+</body>
+
+</html>

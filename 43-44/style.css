@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body .background {
+  height: 1000px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.img-time {
+  position: relative;
+  margin: 60px auto 0;
+  width: 1160px;
+}
+.textT {
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6588235294);
+  width: 510px;
+  height: 55px;
+  font-size: 15px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 538px;
+  right: 2%;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 538px;
+  left: 2%;
+}
+
+.continental {
+  display: flex;
+  position: relative;
+  width: 74%;
+  margin: 90px auto 0;
+  justify-content: space-between;
+}
+.continental h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+.continental img {
+  width: 60%;
+  height: 630px;
+}
+.continental div img {
+  width: 75px;
+  height: 75px;
+}
+.continental .yellow-icon {
+  display: flex;
+  align-items: center;
+}
+.continental .yellow-icon .yellow-t {
+  letter-spacing: 4px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #CFA688;
+  margin-right: 30px;
+}
+.continental .part2 {
+  width: 33%;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+.continental .part2 > .w-94 {
+  width: 94%;
+  display: block;
+  height: 189px;
+}
+.continental .part2 .grid {
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: 1fr 1fr;
+}
+.continental .part2 .grid #grid22 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.continental .part2 .grid .text-grid {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.margin-auto {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.margin-auto .go-to-time-line {
+  position: relative;
+  text-decoration: none;
+}
+.margin-auto .go-to-time-line span {
+  color: rgba(255, 255, 255, 0.6588235294);
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+nav div .icon {
+  width: 196px;
+  height: 26px;
+  margin-left: 50px;
+}
+nav ol {
+  margin: 0;
+  display: flex;
+}
+nav ol li {
+  color: rgba(255, 255, 255, 0.6588235294);
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+.history {
+  padding: 12px 0 0 50px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+
+.textT {
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6588235294);
+  width: 510px;
+  height: 55px;
+  font-size: 15px;
+}
+
+section {
+  position: relative;
+  text-align: center;
+}
+section .arrow-right {
+  position: absolute;
+  top: 384px;
+  right: 2%;
+}
+section .arrow-left {
+  position: absolute;
+  top: 384px;
+  left: 2%;
+}
+section .small-arrowR {
+  position: absolute;
+  top: 760px;
+  right: 408px;
+}
+section .small-arrowL {
+  position: absolute;
+  top: 760px;
+  left: 420px;
+}
+section .real-time-line {
+  display: flex;
+  width: 1213px;
+  margin: auto;
+  margin-top: 112px;
+}
+section .real-time-line .yellow-text {
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  bottom: 1px;
+  left: 21%;
+}
+section .real-time-line .yellow-text a {
+  text-decoration: none;
+  color: #CFA688;
+}
+section .real-time-line div {
+  position: absolute;
+}
+section .real-time-line .b1 {
+  position: relative;
+  width: 40%;
+  height: 304px;
+  margin-right: 20%;
+}
+section .real-time-line .b1 .date {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.0509803922);
+  left: -112%;
+  top: 16px;
+}
+section .real-time-line .b1 img {
+  position: absolute;
+  left: -96%;
+  width: 300px;
+  top: 13%;
+}
+section .real-time-line .b1 .yellow-text {
+  left: -35%;
+}
+section .real-time-line .b3 {
+  position: relative;
+  width: 40%;
+  height: 304px;
+}
+section .real-time-line .b3 .date {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.0509803922);
+  top: 39px;
+  left: 9%;
+}
+section .real-time-line .b3 img {
+  position: absolute;
+  left: 18%;
+  width: 300px;
+  top: 13%;
+}
+section .real-time-line .b3 .yellow-text {
+  left: 66%;
+  width: 153px;
+}
+section .real-time-line .b2 {
+  position: relative;
+  width: 70%;
+  height: 350px;
+  margin-right: 20%;
+}
+section .real-time-line .b2 .date {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 149px;
+  letter-spacing: 20px;
+  top: -78px;
+  left: -134px;
+}
+section .real-time-line .b2 img {
+  position: absolute;
+  width: 500px;
+  left: -89px;
+}
+section .time-line-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section h1 {
+  color: #CFA688;
+  font-size: 77px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 42px;
+  margin-top: 23px;
+}
+section .h1-time-line {
+  margin-bottom: 15px;
+  margin-top: 40px;
+  font-size: 70px;
+}
+section .Timeless {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+section .Timeless .size46 {
+  color: white;
+  font-size: 46px;
+  font-weight: 700;
+  margin-right: 15px;
+  letter-spacing: 4px;
+}
+section .Timeless .text {
+  width: 163px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+section button {
+  width: 285px;
+  height: 70px;
+  background-color: black;
+  border: none;
+}
+section button a {
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6588235294);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  display: block;
+  line-height: 5;
+  position: relative;
+}
+section .time {
+  position: relative;
+  margin: 117px auto 0;
+}
+section .time div {
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  top: -48px;
+  left: 48.7%;
+}
+section .time .small {
+  top: -11px;
+  font-size: 15px;
+}
+section .time .midium {
+  font-size: 20px;
+  top: -25px;
+}
+section .time .small-text-left {
+  left: 24.3%;
+}
+section .time .small-text-right {
+  right: -39px;
+}
+section .time .midium-text-left {
+  left: 697px;
+}
+section .time .midium-text-right {
+  right: 433px;
+}
+section .time img {
+  width: 1000px;
+  position: absolute;
+  left: 24%;
+}
+
+.moto {
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  height: 730px;
+}/*# sourceMappingURL=style.css.map */

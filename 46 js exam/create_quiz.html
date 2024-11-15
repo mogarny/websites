@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Quiz</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="body-create-quiz">
+
+    <header>
+        <nav>
+            <img src="./quiz.jpg" alt="">
+            <div class="links">
+                <div class="link">
+                    <a href="./main_page.html">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.04351 3.98511C3.62524 3.98511 0.0435181 7.56683 0.0435181 11.9851V17.4647C0.0435181 19.8019 2.27449 21.4934 4.52491 20.8625C5.05766 20.7131 5.55722 20.464 5.99705 20.1283L8.83573 17.9619C9.68403 17.3145 10.7216 16.9639 11.7887 16.9639C13.0637 16.9639 14.2877 17.4641 15.1977 18.357L16.4967 19.6316C17.1687 20.291 18.0134 20.7473 18.9333 20.9479L19.0964 20.9835C21.5903 21.5273 23.9486 19.6278 23.9486 17.0753V11.9851C23.9486 7.56682 20.3669 3.98511 15.9486 3.98511H8.04351ZM2.04352 11.9851C2.04352 8.6714 4.72981 5.98511 8.04351 5.98511H15.9486C19.2623 5.98511 21.9486 8.6714 21.9486 11.9851V17.0753C21.9486 18.3515 20.7694 19.3013 19.5225 19.0294L19.3594 18.9938C18.8074 18.8735 18.3007 18.5997 17.8974 18.204L16.5985 16.9295C15.3145 15.6696 13.5875 14.9639 11.7887 14.9639C10.2831 14.9639 8.81923 15.4586 7.62237 16.372L4.78369 18.5385C4.54507 18.7206 4.27406 18.8557 3.98503 18.9367C3.01006 19.2101 2.04352 18.4772 2.04352 17.4647V11.9851ZM8.00018 9.53099C8.00018 8.97871 7.55247 8.53099 7.00018 8.53099C6.4479 8.53099 6.00018 8.97871 6.00018 9.53099V10.0144H5.51379C4.9615 10.0144 4.51379 10.4622 4.51379 11.0144C4.51379 11.5667 4.9615 12.0144 5.51379 12.0144H6.00018V12.531C6.00018 13.0833 6.4479 13.531 7.00018 13.531C7.55247 13.531 8.00018 13.0833 8.00018 12.531V12.0144H8.51379C9.06607 12.0144 9.51379 11.5667 9.51379 11.0144C9.51379 10.4622 9.06607 10.0144 8.51379 10.0144H8.00018V9.53099ZM15.5001 10.0308C14.9478 10.0308 14.5001 10.4785 14.5001 11.0308C14.5001 11.583 14.9478 12.0308 15.5001 12.0308H16.7501H18.0001C18.5523 12.0308 19.0001 11.583 19.0001 11.0308C19.0001 10.4785 18.5523 10.0308 18.0001 10.0308H16.7501H15.5001Z" fill="#878D9A"/>
+                            </svg>
+                        </span>
+                        
+                        <span>
+                            Main Page
+                        </span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./my_quizzes.html">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99508 4.73653C9.99508 3.1647 11.4093 1.95456 12.9995 1.95456C14.5897 1.95456 16.0012 3.1647 16.0012 4.73653V5.02022L20.0936 5.02022C21.2111 5.02022 22.0045 6.02834 22.0045 7.13291V11.0741C22.0045 11.6264 21.581 11.9755 21.0223 11.9755H18.9616C18.4903 11.9755 18.0007 12.5404 18.0007 13.0063C18.0007 13.4721 18.4903 13.9892 18.9616 13.9892H21.0223C21.7523 13.9892 22.034 14.4369 22.034 14.9892L22.1171 20.1095C22.1171 21.2141 21.2111 21.9943 20.0936 21.9943H15.0185C14.4598 21.9943 14.0068 21.6618 14.0068 21.1095V18.8616C14.0068 18.3944 13.4744 18.0055 13.0016 18.0055C12.5289 18.0055 12.0235 18.3944 12.0235 18.8616V21.1095C12.0235 21.6618 11.5705 21.9943 11.0118 21.9943H7.17569C6.05819 21.9943 5.03136 21.2141 5.03136 20.1095V16.0041H4.75969C3.17089 16.0041 2 14.5767 2 13.0063C2 11.4358 3.17089 10.0063 4.75969 10.0063H4.99805V7.14242C4.99805 6.03785 6.05819 5.02022 7.17569 5.02022L9.99508 5.02022V4.73653ZM12.9995 3.98928C12.5268 3.98928 12.0298 4.55295 12.0298 5.02022V6.14242C12.0298 6.69471 11.5769 6.99455 11.0181 6.99455L6.99685 6.99455V11.4054C6.99685 11.9501 6.49581 12.0005 6.16398 12.0005H4.99805C4.52674 12.0005 4 12.5404 4 13.0063C4 13.4721 4.52674 13.9892 4.99805 13.9892H6.16398C6.72273 13.9892 6.99685 14.5401 6.99685 15.0923L6.99685 20.0033H10.0001V18.9117C10.0001 17.3399 11.4114 16.0041 13.0016 16.0041C14.5919 16.0041 16.0039 17.3399 16.0039 18.9117V20.0033H20.0106V15.9892H18.9616C17.3728 15.9892 16.0012 14.5767 16.0012 13.0063C16.0012 11.4358 17.4559 10.0836 19.0447 10.0836H20.0106V6.99455L15.0501 6.99455C14.4914 6.99455 14.0384 6.69471 14.0384 6.14242V5.02022C14.0384 4.55295 13.4722 3.98928 12.9995 3.98928Z" fill="#878D9A"/>
+                            </svg>
+                        </span>
+                        
+                        <span>
+                            My Quizzes
+                        </span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./create_quiz.html">
+                        <span class="icon">
+                            <svg class="weird-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                        </span>
+                        
+                        <span>
+                            Create New Quiz
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <label for="trivia_amount">Number of Questions:</label>
+        <input type="number" name="trivia_amount" id="trivia_amount" min="1" max="50" value="10">
+    
+        <label for="trivia_category">Select Category: </label>
+        <select name="trivia_category" id="category">
+            <option value="any">Any Category</option>
+            <option value="9">General Knowledge</option><option value="10">Entertainment: Books</option><option value="11">Entertainment: Film</option><option value="12">Entertainment: Music</option><option value="13">Entertainment: Musicals &amp; Theatres</option><option value="14">Entertainment: Television</option><option value="15">Entertainment: Video Games</option><option value="16">Entertainment: Board Games</option><option value="17">Science &amp; Nature</option><option value="18">Science: Computers</option><option value="19">Science: Mathematics</option><option value="20">Mythology</option><option value="21">Sports</option><option value="22">Geography</option><option value="23">History</option><option value="24">Politics</option><option value="25">Art</option><option value="26">Celebrities</option><option value="27">Animals</option><option value="28">Vehicles</option><option value="29">Entertainment: Comics</option><option value="30">Science: Gadgets</option><option value="31">Entertainment: Japanese Anime &amp; Manga</option><option value="32">Entertainment: Cartoon &amp; Animations</option>		
+        </select>
+    
+        <label for="trivia_difficulty">Select Difficulty: </label>
+        <select name="trivia_difficulty" id="difficulty">
+            <option value="any">Any Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    
+        <label for="trivia_type">Select Type: </label>
+        <select name="trivia_type" id="trivia_type">&gt;
+            <option value="any">Any Type</option>
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True / False</option>
+        </select>
+
+        <label for="trivia_type">Name for your quiz: </label>
+        <input id="name-quiz" type="text">
+    
+        <button id="create">Create</button>
+    </section>
+
+    <script>var exports = {};</script>
+    <script src="./create_quiz.js"></script>
+</body>
+</html>
